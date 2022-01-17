@@ -1,0 +1,18 @@
+nav {
+  background-color: #F0A500;
+}
+
+nav .input-field{
+  width: 30%;
+}
+
+.page-footer{
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: #F0A500;
+}
+
+.error {
+  background-color: rgb(231, 123, 123);
+}
