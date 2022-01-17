@@ -1,0 +1,19 @@
+name: deploy pipeline
+
+on: 
+  push:
+    branches:
+      -master
+
+jobs:
+  basic_deployment_pl:
+  runs-on: ubuntu-18.04
+  steps:
+    - uses: actions/checkout@version2.1
+    - uses: actions/setup-node@v1
+      with:
+        node-version: '16.13.2'
+    - name: eslint
+      run: npm run eslint
+    - name: npm install
+      run: npm install
